@@ -1,4 +1,4 @@
-![Solace Logo](logo.png)
+![Solace Logo](logo.webp)
 
 # Solace
 
@@ -10,7 +10,7 @@ The project continues to evolve through improvements, feedback, and contribution
 
 ## Preview
 
-![Solace Preview](Solace%20Preview.png)
+![Solace Preview](Solace%20Preview.webp)
 
 ## Features
 
@@ -27,38 +27,36 @@ The project continues to evolve through improvements, feedback, and contribution
 
 ## API
 
-Solace includes a simple Libary API:
+Solace includes a simple Library API:
 
+**Solace:CreateWindow({Title, SubTitle, Size, ToggleKey}) -> Window**
 
-**Solace:CreateWindow({Title, SubTitle, Size, ToggleKey}) -> Window
+**Window:AddSection(name)**  
+**Window:AddTab(name, icon) -> Tab**  
+**Window:RemoveTab(tab)**  
+**Window:SelectTab(tab)**  
+**Window:Toggle()**  
+**Window:Destroy()**
 
-Window:AddSection(name)
-Window:AddTab(name, icon) -> Tab
-Window:RemoveTab(tab)
-Window:SelectTab(tab)
-Window:Toggle()
-Window:Destroy()
+**Tab:AddLabel(text)**  
+**Tab:AddLine(text, kind)**  
+**Tab:AddButton(text, callback)**  
+**Tab:AddToggle(text, default, callback)**  
+**Tab:AddProgress(text)**  
+**Tab:AddStep(text)**  
+**Tab:AddTree(rootName, nodes, rootIcon)**  
+**Tab:Clear()**
 
-Tab:AddLabel(text)
-Tab:AddLine(text, kind)
-Tab:AddButton(text, callback)
-Tab:AddToggle(text, default, callback)
-Tab:AddProgress(text)
-Tab:AddStep(text)
-Tab:AddTree(rootName, nodes, rootIcon)
-Tab:Clear()
-
-Solace:Notify({Title, Text, Duration, Icon})**
-
+**Solace:Notify({Title, Text, Duration, Icon})**
 
 ## Current Status
 
 Solace is currently in **Beta Testing**.
 
-Development is actively ongoing, with new reconstruction improvements, UI updates, and features being added as progress continues do not expect anything to be perfect or work without bugs
+Development is actively ongoing, with new reconstruction improvements, UI updates, and features being added as progress continues. Do not expect everything to be perfect or completely bug-free.
 
 The goal of Solace is simple:
 
 > Provide the most reliable Roblox server reconstructor/Explorer
 
-Expect frequent updates, improvements, and new features as development continues
+Expect frequent updates, improvements, and new features as development continues.
