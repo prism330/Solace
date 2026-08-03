@@ -1,16 +1,16 @@
-![Solace Logo](logo.webp)
+![Solace Logo](assets/logo.webp)
 
 # Solace
 
-Solace is a modern Roblox research and reconstruction tool built for researchers, and people who want a deeper understanding of Roblox game structures
+Solace is a modern Roblox research and reconstruction tool built for researchers, and people who want a deeper understanding of Roblox game structures.
 
-Solace is one of the best debugging suites as of now, even having the ability to reconstruct serverstorage model assets and view reconstructed sources
+Solace is one of the best debugging suites as of now, having the ability to reconstruct ServerStorage model assets and view reconstructed sources.
 
-The project continues to evolve through improvements, feedback, and contributions from the community
+The project continues to evolve through improvements, feedback, and contributions from the community.
 
 ## Preview
 
-![Solace Preview](Solace%20Preview.webp)
+![Solace Preview](assets/Solace%20Preview.webp)
 
 ## Features
 
@@ -31,12 +31,16 @@ Solace includes a simple Library API:
 
 **Solace:CreateWindow({Title, SubTitle, Size, ToggleKey}) -> Window**
 
+### Window
+
 **Window:AddSection(name)**  
 **Window:AddTab(name, icon) -> Tab**  
 **Window:RemoveTab(tab)**  
 **Window:SelectTab(tab)**  
 **Window:Toggle()**  
 **Window:Destroy()**
+
+### Tab
 
 **Tab:AddLabel(text)**  
 **Tab:AddLine(text, kind)**  
@@ -46,6 +50,8 @@ Solace includes a simple Library API:
 **Tab:AddStep(text)**  
 **Tab:AddTree(rootName, nodes, rootIcon)**  
 **Tab:Clear()**
+
+### Notifications
 
 **Solace:Notify({Title, Text, Duration, Icon})**
 
@@ -57,6 +63,6 @@ Development is actively ongoing, with new reconstruction improvements, UI update
 
 The goal of Solace is simple:
 
-> Provide the most reliable Roblox server reconstructor/Explorer
+> Provide the most reliable Roblox server reconstructor/Explorer.
 
 Expect frequent updates, improvements, and new features as development continues.
