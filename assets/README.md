@@ -1,4 +1,4 @@
-![Solace Logo](assets/Solace%20Logo.webp)
+![Solace Logo](Solace%20Logo.webp)
 
 # Solace
 
@@ -10,7 +10,7 @@ The project continues to evolve through improvements, feedback, and contribution
 
 ## Preview
 
-![Solace Preview](assets/Solace%20Preview.PNG)
+![Solace Preview](Solace%20Preview.PNG)
 
 ## Features
 
