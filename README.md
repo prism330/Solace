@@ -12,6 +12,10 @@ The project continues to evolve through improvements, feedback, and contribution
 
 ![Solace Preview](assets/Solace%20Preview.PNG)
 
+## Video
+
+https://youtu.be/a45JQYSopu0?si=_eAhHPSRngTEsooT
+
 ## Features
 
 * ServerScriptService and ServerStorage reconstruction
@@ -27,33 +31,41 @@ The project continues to evolve through improvements, feedback, and contribution
 
 ## API
 
-Solace includes a simple Library API:
+```lua
+-- Create Window
+local Window = Solace:CreateWindow({
+    Title = "Solace",
+    SubTitle = "Beta",
+    Size = UDim2.new(0, 650, 0, 450),
+    ToggleKey = Enum.KeyCode.RightControl
+})
 
-**Solace:CreateWindow({Title, SubTitle, Size, ToggleKey}) -> Window**
+-- Window
+Window:AddSection(name)
+Window:AddTab(name, icon) --> Tab
+Window:RemoveTab(tab)
+Window:SelectTab(tab)
+Window:Toggle()
+Window:Destroy()
 
-### Window
+-- Tab
+Tab:AddLabel(text)
+Tab:AddLine(text, kind)
+Tab:AddButton(text, callback)
+Tab:AddToggle(text, default, callback)
+Tab:AddProgress(text)
+Tab:AddStep(text)
+Tab:AddTree(rootName, nodes, rootIcon)
+Tab:Clear()
 
-**Window:AddSection(name)**  
-**Window:AddTab(name, icon) -> Tab**  
-**Window:RemoveTab(tab)**  
-**Window:SelectTab(tab)**  
-**Window:Toggle()**  
-**Window:Destroy()**
-
-### Tab
-
-**Tab:AddLabel(text)**  
-**Tab:AddLine(text, kind)**  
-**Tab:AddButton(text, callback)**  
-**Tab:AddToggle(text, default, callback)**  
-**Tab:AddProgress(text)**  
-**Tab:AddStep(text)**  
-**Tab:AddTree(rootName, nodes, rootIcon)**  
-**Tab:Clear()**
-
-### Notifications
-
-**Solace:Notify({Title, Text, Duration, Icon})**
+-- Notifications
+Solace:Notify({
+    Title = "Title",
+    Text = "Notification text",
+    Duration = 5,
+    Icon = "rbxassetid://0"
+})
+```
 
 ## Current Status
 
